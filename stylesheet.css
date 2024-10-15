@@ -78,13 +78,15 @@ h2 {
     border: none;
     border-radius: 14px;
     text-decoration: none;
-
 }
 
 .button-container {
     display: grid;
     place-items: center;
     height: 20vh;
+    /* Adjust as needed */
+    margin: 0;
+    padding: 0;
 }
 
 p {
@@ -451,20 +453,22 @@ footer {
     img {
         width: 100%;
     }
+}
 
-
+@media only screen and (max-width: 600px) {
     .button-container {
-        display: block;
-        align-items: center;
+        height: 40vh;
+        /* Increase height for better centering */
     }
+}
 
-    .bottom-beans img {
-        max-width: 100%;
-        min-width: 600px;
-        height: auto;
-        margin: 0 auto;
-        display: block;
-    }
+.bottom-beans img {
+    max-width: 100%;
+    min-width: 108.25%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
@@ -563,6 +567,7 @@ footer {
     .container-P1 {
         display: block;
         text-align: center;
+        padding: 10px;
     }
 
     .textbox-P1 {
@@ -573,11 +578,16 @@ footer {
     .container-P1 img {
         width: 100%;
         height: auto;
+        margin: 0 auto;
+        display: block;
     }
+}
 
+@media only screen and (max-width: 600px) {
     .container-P2 {
         display: block;
         text-align: center;
+        padding: 10px;
     }
 
     .textbox-P2 {
@@ -588,11 +598,16 @@ footer {
     .container-P2 img {
         width: 100%;
         height: auto;
+        margin: 0 auto;
+        display: block;
     }
+}
 
+@media only screen and (max-width: 600px) {
     .container-P3 {
         display: block;
         text-align: center;
+        padding: 10px;
     }
 
     .textbox-P3 {
@@ -603,5 +618,7 @@ footer {
     .container-P3 img {
         width: 100%;
         height: auto;
+        margin: 0 auto;
+        display: block;
     }
 }
